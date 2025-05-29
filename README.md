@@ -147,6 +147,12 @@ This will start the Open WebUI server, which you can access at [http://localhost
   docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
   ```
 
+- **If Ollama is on your computer with Nvidia GPU support**, use this command:
+  
+```bash
+  docker run -d -p 3000:8080 --gpus all --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:cuda
+  ```
+
 ### Installation for OpenAI API Usage Only
 
 - **If you're only using OpenAI API**, use this command:
